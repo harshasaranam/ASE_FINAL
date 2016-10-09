@@ -48,12 +48,12 @@ angular.module('app.routes', [])
     controller: 'mapToFhCtrl'
   })
 
-  .state('menu.fHOptYourTimings', {
+  .state('menu.fHScheduleYourAppointment', {
     url: '/page7',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/fHOptYourTimings.html',
-        controller: 'fHOptYourTimingsCtrl'
+        templateUrl: 'templates/fHScheduleYourAppointment.html',
+        controller: 'fHScheduleYourAppointmentCtrl'
       }
     }
   })
@@ -68,10 +68,10 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('haagHallOptYourTimings', {
+  .state('haagHallScheduleYourAppointment', {
     url: '/page9',
-    templateUrl: 'templates/haagHallOptYourTimings.html',
-    controller: 'haagHallOptYourTimingsCtrl'
+    templateUrl: 'templates/haagHallScheduleYourAppointment.html',
+    controller: 'haagHallScheduleYourAppointmentCtrl'
   })
 
   .state('mapToHaagHall', {
@@ -80,7 +80,33 @@ angular.module('app.routes', [])
     controller: 'mapToHaagHallCtrl'
   })
 
-$urlRouterProvider.otherwise('/side-menu21/page1')
+  .state('menu.mNLibrary351', {
+    url: '/page11',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/mNLibrary351.html',
+        controller: 'mNLibrary351Ctrl'
+      }
+    }
+  })
+
+  .state('menu.mNLScheduleYourAppointment', {
+    url: '/page12',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/mNLScheduleYourAppointment.html',
+        controller: 'mNLScheduleYourAppointmentCtrl'
+      }
+    }
+  })
+
+  .state('mapToMNL', {
+    url: '/page13',
+    templateUrl: 'templates/mapToMNL.html',
+    controller: 'mapToMNLCtrl'
+  })
+
+$urlRouterProvider.otherwise('/page4')
 
   
 
