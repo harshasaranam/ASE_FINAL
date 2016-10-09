@@ -20,26 +20,6 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.cart', {
-    url: '/page2',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/cart.html',
-        controller: 'cartCtrl'
-      }
-    }
-  })
-
-  .state('menu.cloud', {
-    url: '/page3',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/cloud.html',
-        controller: 'cloudCtrl'
-      }
-    }
-  })
-
   .state('menu', {
     url: '/side-menu21',
     templateUrl: 'templates/menu.html',
@@ -52,10 +32,14 @@ angular.module('app.routes', [])
     controller: 'loginCtrl'
   })
 
-  .state('flasheimHall', {
+  .state('menu.flarsheimHall460', {
     url: '/page5',
-    templateUrl: 'templates/flasheimHall.html',
-    controller: 'flasheimHallCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/flarsheimHall460.html',
+        controller: 'flarsheimHall460Ctrl'
+      }
+    }
   })
 
   .state('mapToFh', {
@@ -64,7 +48,39 @@ angular.module('app.routes', [])
     controller: 'mapToFhCtrl'
   })
 
-$urlRouterProvider.otherwise('/page4')
+  .state('menu.fHOptYourTimings', {
+    url: '/page7',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/fHOptYourTimings.html',
+        controller: 'fHOptYourTimingsCtrl'
+      }
+    }
+  })
+
+  .state('menu.haagHall301', {
+    url: '/page8',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/haagHall301.html',
+        controller: 'haagHall301Ctrl'
+      }
+    }
+  })
+
+  .state('haagHallOptYourTimings', {
+    url: '/page9',
+    templateUrl: 'templates/haagHallOptYourTimings.html',
+    controller: 'haagHallOptYourTimingsCtrl'
+  })
+
+  .state('mapToHaagHall', {
+    url: '/page10',
+    templateUrl: 'templates/mapToHaagHall.html',
+    controller: 'mapToHaagHallCtrl'
+  })
+
+$urlRouterProvider.otherwise('/side-menu21/page1')
 
   
 
