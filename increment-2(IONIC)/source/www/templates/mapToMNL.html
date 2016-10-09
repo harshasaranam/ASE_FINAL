@@ -1,6 +1,7 @@
 <ion-view title="map to MNL" id="page13">
-<<<<<<< HEAD
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+<ion-header>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Travel modes in directions</title>
     <style>
@@ -59,7 +60,7 @@
         var selectedMode = document.getElementById('mode').value;
         directionsService.route({
           origin: {lat: 39.027541, lng: -94.575269},  
-          destination: {lat: 39.033743, lng: -94.576425},  
+          destination: {lat: 39.035014, lng: -94.576526},  
           // Note that Javascript allows us to access the constant
           // using square brackets and a string value as its
           // "property."
@@ -71,7 +72,11 @@
             window.alert('Directions request failed due to ' + status);
           }
         });
-=======
-    <ion-content padding="true" class="has-header"></ion-content>
-</ion-view>
->>>>>>> origin/master
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvJ2FWU_SxYVDJXvJqin5ixgplbRkKuww&callback=initMap">
+    </script>
+    
+    </ion-content>
+    </ion-view>
